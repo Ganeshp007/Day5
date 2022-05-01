@@ -1,13 +1,19 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-int year;
-Console.WriteLine("Enter the year:-");
-year = int.Parse(Console.ReadLine());
-if(year%4==0 && year%400==0)
+int n;
+
+Console.WriteLine("Enter the power of 2:- ");
+n= int.Parse(Console.ReadLine());
+if(n>30)
 {
-    Console.WriteLine(year + " is a Leap Year...");
+    Console.WriteLine("\nInt datatype range exceeds..!!\nNOTE: Please enter powers of 2 less than 31...");
+    Environment.Exit(0) ;
 }
-else
+
+for(int i = 1; i <= n; i++)
 {
-    Console.WriteLine(year + " is Not Leap Year...");
+    double result = 0;
+    result = Math.Pow((2), i); //finding power of 2 for current iteration of i
+    Console.WriteLine("2 to the power " + i +" is = "+ result);
+   
 }
