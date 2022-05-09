@@ -1,26 +1,20 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Console.WriteLine("---- Findout Largest Number ----\n");
+Console.WriteLine("---- Swapping of Number ----\n");
 
-Console.Write("Enter value of 1st No :- ");
+Console.Write("> Enter value of X :- ");
 int x = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Enter value of 2nd No :- ");
+Console.Write("> Enter value of Y :- ");
 int y = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Enter value of 3rd No :- ");
-int z = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("\n>> Before Swapping :-  x={0}  ,  y={1}", x, y);
 
-if ((x > y) && (x > z))
-{
-    Console.WriteLine("{0} is largest value", x);
-}
-else if ((y > x) && (y > z))
-{
-    Console.WriteLine("{0} is largest value", y);
-}
-else
-{
-    Console.WriteLine("{0} is largest value", z);
+//Swpping with third variable
 
-}
+int temp = x;
+x = y;
+y = temp ;
+
+Console.WriteLine("\n---------------------------------------------\n");
+Console.WriteLine(">> After Swapping :-  x={0}  ,  y={1}",x,y);
