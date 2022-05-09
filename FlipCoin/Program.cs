@@ -2,6 +2,7 @@
 
 Console.WriteLine("---- Even Odd Test ----\n");
 
+
 Console.Write("> Enter Number to Test :- ");
 int x = Convert.ToInt32(Console.ReadLine());
 
