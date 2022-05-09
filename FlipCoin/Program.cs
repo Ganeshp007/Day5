@@ -1,15 +1,21 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Console.WriteLine("---- Findout Alphabate is Vowel OR Consonant ----\n");
 
-Console.Write("Enter the Alphabate to check :- ");
-char ch = Convert.ToChar(Console.ReadLine());
+Console.WriteLine("---- Swapping of Number ----\n");
 
-if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
-{
-    Console.WriteLine("\nResult :- {0} is Vowel", ch);
-}
-else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'z'))
-{
-    Console.WriteLine("\nResult :- {0} is Consonant", ch);
-}
+Console.Write("> Enter value of X :- ");
+int x = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("> Enter value of Y :- ");
+int y = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("\n>> Before Swapping :-  x={0}  ,  y={1}", x, y);
+
+//Swpping with third variable
+
+int temp = x;
+x = y;
+y = temp ;
+
+Console.WriteLine("\n---------------------------------------------\n");
+Console.WriteLine(">> After Swapping :-  x={0}  ,  y={1}",x,y)
