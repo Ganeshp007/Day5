@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+
 Console.WriteLine("---- Swapping of Number ----\n");
 
 Console.Write("> Enter value of X :- ");
@@ -17,4 +18,4 @@ x = y;
 y = temp ;
 
 Console.WriteLine("\n---------------------------------------------\n");
-Console.WriteLine(">> After Swapping :-  x={0}  ,  y={1}",x,y);
+Console.WriteLine(">> After Swapping :-  x={0}  ,  y={1}",x,y)
